@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Shaldons' Test website</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="../Images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" ></i>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="./shop.html">SHOP</a></li>
+                <li><a href="#">HELP</a></li>
+                <li><a href="./ShoppingCart.html" class="blk-btn" style="color: #fff">YOUR CART</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+</section>
+
+<!-----Product Detail----->
+
+<section class="product">
+<div class="product_container flex">
+    <div class="product_left">
+        <div class="main_image">
+            <img src="../Images/smegicecreammaker.png" alt="">
+        </div>
+    </div>
+    <div class="product_right">
+        <h3>Smeg Ice Cream Maker</h3>
+        <div>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+        </div>
+        <h4><small>$</small>349.99</h4>
+        <div class="choose">
+            <label for="product">Slect a Model</label>
+            <select id="product_models" name="icecreamakers">
+                <option value="Red">Red</option>
+                <option value="White">White</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+            </select>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sem nisl, dictum sit amet euismod a, porttitor id sapien. Nullam at justo vitae eros faucibus pharetra et ut orci. Pellentesque sit amet luctus mi. Donec in elit nec ante bibendum iaculis at et mi. </p>
+        <Button class="addtoCart">Add to Cart</Button>
+    </div>
+</div>
+</section>
+
+
+<!-----Similar Items----->
+
+<section class="keyitems">
+    <div class="row">
+        <div class="keyitems-col">
+            <img src="../Images/smegtoaster.png">
+            <p class="label">Toasters</p>
+        </div>
+        <div class="keyitems-col">
+            <img src="../Images/smegcoffeemachine.png">
+            <p class="label">Coffee Machines</p>
+        </div>
+        <div class="keyitems-col">
+            <img src="../Images/smegicecreammaker.png">
+            <p class="label">Icecream Makers</p>
+        </div>
+    </div>
+</section>
+</body>
+
+
+<!-----Testimonials----->
+
+<section class="testimonials">
+    <h1>Testimonials</h1>
+    <div class="row">
+        <div class="testimonial">
+            <img src="../Images/user1.jpg">
+            <div class="testimonial-col-2">
+                <h3>Christine Berley</h3>
+                <h3>14 April 2023 </h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Non sunt magni et, animi maxime facilis! Porro
+                    atque ex tempora ea quos necessitatibus officiis quam.
+                    Dolorem esse tenetur laboriosam totam numquam.</p>
+                </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="testimonial">
+            <img src="../Images/user2.jpg">
+            <div class="testimonial-col-2">
+                <h3>Daivd Smith</h3>
+                <h3>4 May 2023 </h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Non sunt magni et, animi maxime facilis! Porro
+                    atque ex tempora ea quos necessitatibus officiis quam.
+                    Dolorem esse tenetur laboriosam totam numquam.</p>
+                </div>
+        </div>
+    </div>
+</section>
+
+
+<!---Footer--->
+
+<footer>
+
+<Section class="footer-footer">
+    <div class="footer-sitemap">
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">About</a></li>
+        </ul>
+        <ul>
+            <li><a href="./shop.html">Shop</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">help</a></li>
+        </ul>
+
+    </div>
+</Section>
+
+</footer>
+
+
+<!--Javascript-->
+<script src="../js/main.js">
+</script> 
+</html> 

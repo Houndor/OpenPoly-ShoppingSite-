@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Shaldons' Test website</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="../Images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" ></i>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="./shop.html">SHOP</a></li>
+                <li><a href="#">HELP</a></li>
+                <li><a href="./ShoppingCart.html" class="blk-btn" style="color: #fff">YOUR CART</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+</section>
+
+
+<!-----Cart Nav----->
+
+<section class="cart-nav">
+    <div class="cart-nav" id="cartNavLinks">
+        <ul>
+            <li><a href="./ShoppingCart.html"><b>1. Shopping Cart</b></a></li>
+            <li><a href="./shippingdetails.html">2. Shipping Details</a></li>
+            <li><a href="./PaymentOptions.html">3. Payment Options</a></li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+<!-----Shopping Cart----->
+
+<section class="product">
+    <div class="cart-container">
+        <div class="table-container item-list">
+            <h2>Shopping Cart</h2>
+            <table id="cart">
+
+            </table>
+            <div class="button-container">
+                <a href="./shippingdetails.html" class="blk-btn" id="next">Next Step</a>
+                <a href="./index.html" class="blk-btn" id="cancel">Cancel</a>
+            </div>
+        </div>
+        <div class="table-container summary">
+            <h2>Summary</h2>
+            <ul id="totals">
+                <li>Subtotal: $<span id="subtotal"></span></li>
+                <li>Shipping: $<span id="shipping"></span></li>
+                <li>Taxes: $<span id="taxes"></span></li>
+                <li>Total: $<span id="total"></span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+<!---Footer--->
+
+
+<footer>
+
+<Section class="footer-footer">
+    <div class="footer-sitemap">
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">About</a></li>
+        </ul>
+        <ul>
+            <li><a href="./shop.html">Shop</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">help</a></li>
+        </ul>
+
+    </div>
+</Section>
+
+</footer>
+
+
+<!--Javascript-->
+<script src="../js/cart.js">
+</script> 
+</html> 

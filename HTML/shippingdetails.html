@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Shaldons' Test website</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="../Images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" ></i>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="./shop.html">SHOP</a></li>
+                <li><a href="#">HELP</a></li>
+                <li><a href="./ShoppingCart.html" class="blk-btn" style="color: #fff">YOUR CART</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+</section>
+
+
+<!-----Cart Navigation----->
+
+<div class="cart-nav" id="cartNavLinks">
+    <ul>
+        <li><a href="./ShoppingCart.html">Shopping Cart</a></li>
+        <li><a href="./shippingdetails.html"><b>Shipping Details</b></a></li>
+        <li><a href="./PaymentOptions.html">Payment Options</a></li>
+    </ul>
+</div>
+
+
+<!-----Shipping Details----->
+
+<div class="body">
+    <div class="shipping-details">
+        <h1>Shipping Details</h1>
+        <form id="shipping-form">
+            <div class="form-row">
+                <input type="text" id="first-name" placeholder="First Name">
+                <input type="text" id="last-name" placeholder="Last Name">
+            </div>
+            <input type="text" id="address1" placeholder="Address1">
+            <input type="text" id="address2" placeholder="Address2">
+            <div class="form-row">
+                <select id="country">
+                    <option selected disabled>Country</option>
+                    <!-- Add your countries here -->
+                    <option value="us">Australia</option>
+                    <option value="us">New Zealand</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                </select>
+                <input type="text" id="city" placeholder="City">
+            </div>
+            <div class="form-row">
+                <input type="text" id="zip" placeholder="Zip/Postal Code">
+                <input type="text" id="phone" placeholder="Phone Number">
+            </div>
+            <div class="form-row">
+                <label class="radio-option" for="free-shipping">
+                    <input type="radio" id="free-shipping" name="shipping" checked>
+                    Free Shipping<br>Between 2 - 5 working days
+                </label>
+                <label class="radio-option" for="next-day">
+                    <input type="radio" id="next-day" name="shipping">
+                    Next day Delivery<br>$20 - 24 Hours from checkout
+                </label>
+            </div>
+            <a href="./PaymentOptions.html" class="blk-btn" id="next">Next</a>
+            <a href="./index.html" class="blk-btn" id="cancel">Cancel</a>
+        </form>
+    </div>
+
+    <div class="summary">
+        <h1>Summary</h1>
+        <table id="cart-items"></table>
+        <ul id="totals">
+
+        </ul>
+    </div>
+</div>
+</body>
+
+
+
+<!---Footer--->
+
+
+<footer>
+
+<Section class="footer-footer">
+    <div class="footer-sitemap">
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">About</a></li>
+        </ul>
+        <ul>
+            <li><a href="./shop.html">Shop</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">help</a></li>
+        </ul>
+
+    </div>
+</Section>
+
+</footer>
+
+
+<!--Javascript-->
+<script src="../js/shipping.js">
+</script> 
+</html> 

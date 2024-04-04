@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Shaldons' Test website</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="../Images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" ></i>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="./shop.html">SHOP</a></li>
+                <li><a href="#">HELP</a></li>
+                <li><a href="./ShoppingCart.html" class="blk-btn" style="color: #fff">YOUR CART</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+        <h1>Bringing Style to Your Life</h1>
+    </div>
+
+</section>
+
+
+<!-----Shop Search Box----->
+
+<section class="searchcontainer">
+    <form class="shopsearch">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="search" type="text" placeholder="Search...">
+        <button type="submit">SEARCH</button>
+    </form>
+</section>
+
+
+<!-----KeyItems----->
+
+<section class="keyitems">
+    <div class="row">
+        <div class="keyitems-col">
+            <a href="./productdetail.html"><img src="../Images/smegtoaster.png"></a>
+            <p class="label">Toasters</p>
+        </div>
+        <div class="keyitems-col">
+            <a href="./productdetail.html"><img src="../Images/smegcoffeemachine.png"></a>
+            <p class="label">Coffee Machines</p>
+        </div>
+        <div class="keyitems-col">
+            <a href="./productdetail.html"><img src="../Images/smegicecreammaker.png"></a>
+            <p class="label">Icecream Makers</p>
+        </div>
+        <div class="keyitems-col">
+            <a href="./shop.html" class="keyItemsBtn">SHOP NOW</a>
+        </div>
+    </div>
+</section>
+
+
+<!-----Image and Newsletter----->
+
+<section class="newsletterimage">
+    <div class="row">
+        <div class="imageletter">
+            <img src="../Images/Smegicon.png" alt="" class="letterimage">
+        </div>
+        <form class="newsletterform" action="">
+            <h1 class="newsletterheader">Newsletter</h1>
+            <div>
+                <input class="newsletteremail" type="email" name="" value="" placeholder="Email address...">
+                <button type="button">Submit</button>
+            </div>
+        </form>
+
+    </div>
+</section>
+
+
+
+<!-----Product Display----->
+
+<Section class="shopimagearray">
+    <div class="shopimagegrid">
+        <div class="shopimage-grid-col-2 image-grid-row-2" >
+           <h1>Header<br>Regarding<br>Your Product</h1>
+            <p>Sed ut perspiciatis unde omnis iste natus<br>error sit voluptatem accusantium<br>ddoloremque laudantium, totam rem<br>aperiam, eaque iqsa quae ab illo</p>
+            <button>Browse All</button>
+        </div>
+        <div>
+            <img src="../Images/smegFilterCoffee.jpg" alt="Fliter Coffee Machine">
+            <p>Fliter Coffee Machine <br>$300 </p>
+        </div>
+        <div>
+            <img src="../Images/smegHandBlender.jpg" alt="Hand Blender">
+            <p>Hand Blender <br>$300 </p>
+        </div>
+        <div>
+            <img src="../Images/smegPersonalBlender.jpg" alt="Personal Blender">
+            <p>Personal Blender <br>$300 </p>
+        </div>
+        <div>
+            <img src="../Images/smegStandingMixer.jpg" alt="Standing Mixer">
+            <p>Standing Mixer <br>$300 </p>
+        </div>
+        <div>
+
+        </div>
+        <div>
+            <img src="../Images/smegMilkFrother.jpg" alt="Standing Mixer">
+            <p>Standing Mixer <br>$300 </p>
+        </div>
+        <div>
+            <img src="../Images/smegCitrusJuicer.jpg" alt="Standing Mixer">
+            <p>Standing Mixer <br>$300 </p>
+        </div>
+    </div>
+</Section>
+
+
+
+</body>
+
+
+
+<!---Footer--->
+
+
+<footer>
+
+<Section class="footer-footer">
+    <div class="footer-sitemap">
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">About</a></li>
+        </ul>
+        <ul>
+            <li><a href="./shop.html">Shop</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">help</a></li>
+        </ul>
+
+    </div>
+</Section>
+
+</footer>
+
+
+<!--Javascript-->
+<script src="../js/main.js">
+</script> 
+</html> 

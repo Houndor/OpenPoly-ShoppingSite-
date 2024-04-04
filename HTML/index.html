@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Shaldons' Test website</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="../Images/logo.png"></a>
+            <div class="button_main"><input type="text" class="Enter_text" placeholder="Search" name=""></div>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" ></i>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="./shop.html">SHOP</a></li>
+                <li><a href="#">HELP</a></li>
+                <li><a href="./ShoppingCart.html" class="blk-btn" style="color: #fff">YOUR CART</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+        <h1>Bringing Style to Your Life</h1>
+    </div>
+</section>
+
+
+<!-----KeyItems----->
+
+<section class="keyitems">
+    <div class="row">
+        <div class="keyitems-col">
+            <a href="./productdetail.html"><img src="../Images/smegtoaster.png"></a>
+        </div>
+        <div class="keyitems-col">
+            <a href="./productdetail.html"><img src="../Images/smegcoffeemachine.png"></a>
+        </div>
+        <div class="keyitems-col">
+            <a href="./productdetail.html"><<img src="../Images/smegicecreammaker.png"></a>
+        </div>
+    </div>
+    <a href="./shop.html" class="hero-btn red-btn">SHOP NOW</a>
+</section>
+
+
+
+<!-----Carousel----->
+
+<section>
+    <div class="carousel">
+        <button class="carousel_button carousel_button--left is-hidden">
+            <i class="fa fa-arrow-left"></i>
+        </button>
+        <div class="carousel_track-container">
+            <ul class="carousel_track">
+                <li class="carousel_slide current-slide">
+                    <img class="carousel_image" src="../Images/smegcoffeemachine.png" alt="">
+                </li>
+                <li class="carousel_slide">
+                    <img class="carousel_image" src="../Images/smegicecreammaker.png" alt="">
+                </li>
+                <li class="carousel_slide">
+                    <img class="carousel_image" src="../Images/smegtoaster.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <button class="carousel_button carousel_button--right">
+            <i class="fa fa-arrow-right"></i>
+        </button>
+        <div class="carousel_nav">
+            <button class="carousel_indicator current-slide"></button>
+            <button class="carousel_indicator"></button>
+            <button class="carousel_indicator"></button>
+        </div>
+    </div>
+</section>
+
+
+
+<!-----Newsletter----->
+
+<section class="newsletter">
+    <div class="row">
+        <div class="newstext">
+            <h1>Newsletter</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Nullam ligula lorem, dictum rutrum tristique et, dictum id neque.</p>
+        </div>
+        <div class="email">
+            <input type="text" placeholder="Email address...">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</section>
+
+
+
+<!-----Product Display----->
+
+<Section class="imagearray">
+    <div class="imagegrid">
+        <div class="image-grid-col-2 image-grid-row-2" >
+            <img src="../Images/smegBlender.jpg" alt="Blender">
+            <p>Blender <br>$300 </p>
+        </div>
+        <div>
+            <img src="../Images/smegFilterCoffee.jpg" alt="Fliter Coffee Machine">
+            <p>Fliter Coffee Machine <br>$300 </p>
+        </div>
+        <div>
+            <img src="../Images/smegHandBlender.jpg" alt="Hand Blender">
+            <p>Hand Blender <br>$300 </p>
+        </div>
+        <div>
+            <img src="../Images/smegPersonalBlender.jpg" alt="Personal Blender">
+            <p>Personal Blender <br>$300 </p>
+        </div>
+        <div>
+            <img src="../Images/smegStandingMixer.jpg" alt="Standing Mixer">
+            <p>Standing Mixer <br>$300 </p>
+        </div>
+    </div>
+</Section>
+
+
+
+</body>
+
+
+
+<!---Footer--->
+
+
+<footer>
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Pollentesque aliquet turpis nulla, eleifend faucibus est <br>
+    sollicitudin ut. Maecenas ut venenatis ex, et dapibus purus.</p>
+</section>
+
+<Section class="footer-footer">
+    <div class="footer-sitemap">
+        <ul>
+            <li><p>1717 Harrison St, San Francisco</p></li>
+            <li><p>CA94103, USA</p></li>
+        </ul>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">The Company</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">The Team</a></li>
+            <li><a href="#">Our History</a></li>
+            <li><a href="#">Brand Motto</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+
+    </div>
+</Section>
+
+</footer>
+
+
+<!--Javascript-->
+<script src="../js/main.js">
+</script> 
+</html> 
